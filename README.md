@@ -46,7 +46,7 @@ Enter full path of file to check timestomping: /home/kali/Desktop/rockyou.txt
 
 Sample Output:
 
-=== 🧪 AFID – Anti-Forensic Intelligence Detector (v1.4-BEAST) ===
+=== 🧪 AFID – Anti-Forensic Intelligence Detector (v1.0) ===
 
 [🔍] File Checked: /home/kali/Desktop/rockyou.txt
     Access Time : 2025-05-19T17:01:49.360415
