@@ -37,9 +37,12 @@ sudo python3 AFID.py
 
 
 Input Example
+
 AFID will prompt you like this:
 
 Enter full path of file to check timestomping: /home/kali/Desktop/rockyou.txt
+
+
 
 Sample Output:
 
