@@ -1,0 +1,18 @@
+{
+    "version": "1.4-BEAST",
+    "file_checked": "/home/kali/Desktop/rockyou.txt",
+    "timestamps": {
+        "access_time": "2025-05-19T17:01:49.360415",
+        "modify_time": "2023-01-15T08:30:00",
+        "change_time": "2025-05-19T17:01:51.600362"
+    },
+    "timestamp_status": "normal",
+    "hash": "6dfa76aa0e02303994fd1062d0ac983f0b69ece5474d85a5bba36362e19c1076",
+    "xattr": [],
+    "shred_log_found": false,
+    "secure_deletion_files": [
+        "/root/sensitive_data.txt",
+        "/root/bleachbit_temp_sim/tempfile_0.log"
+    ],
+    "log_integrity": "mismatch"
+}

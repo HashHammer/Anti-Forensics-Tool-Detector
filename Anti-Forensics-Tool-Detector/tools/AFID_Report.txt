@@ -1,0 +1,20 @@
+=== 🧪 AFID – Anti-Forensic Intelligence Detector (v1.3-KALI) ===
+
+[🔍] Checking for 'shred' tool usage in logs...
+[+] No 'shred' logs found.
+
+[🔍] Checking file timestamp for: /home/kali/Desktop/rockyou.txt
+    Access Time : 2025-05-19 17:01:49.360415
+    Modify Time : 2023-01-15 08:30:00
+    Change Time : 2025-05-19 17:01:51.600362
+[+] Timestamps look normal.
+
+[🔍] Checking for missing files indicating secure deletion...
+[!] File missing: /root/sensitive_data.txt — may have been securely deleted.
+[!] File missing: /root/bleachbit_temp_sim/tempfile_0.log — may have been securely deleted.
+
+[🔍] Verifying log integrity (detect wipe patterns)...
+[!] Log integrity mismatch — possible wiping or manipulation detected.
+
+📁 Report saved to: AFID_Report.txt
+=== ✅ AFID Scan Complete ===

@@ -1,0 +1,50 @@
+# 🧪 AFID – Anti-Forensic Intelligence Detector (v1.0)
+
+Hey folks 👋
+
+This is a tool I built for those who are into digital forensics, CTFs, and cyber investigations. **AFID** is designed to detect signs of anti-forensics — things like secure deletion (e.g., via `shred` or `BleachBit`), timestomping, log tampering, or general evidence-wiping behavior.
+
+I built this mainly for use on **Kali Linux**, but it should run fine on any Linux distro with Python 3.
+
+---
+
+## 🔍 What It Does
+
+- Checks for suspicious timestamp changes (timestomping)
+- Verifies SHA-256 hash of the file
+- Looks for missing “sensitive” files that might have been wiped
+- Scans for signs of `shred`/BleachBit usage in logs
+- Checks extended attributes (like immutability flags)
+- Detects log file tampering (if logs are accessible)
+- Saves everything in a clean JSON report inside the `tools` folder
+
+---
+
+## 📸 Sample Output
+
+```bash
+=== 🧪 AFID – Anti-Forensic Intelligence Detector (v1.4-BEAST) ===
+
+Enter full path of file to check timestomping: /home/kali/Desktop/rockyou.txt
+
+[🔍] File Checked: /home/kali/Desktop/rockyou.txt
+    Access Time : 2025-05-19T17:01:49.360415
+    Modify Time : 2023-01-15T08:30:00
+    Change Time : 2025-05-19T17:01:51.600362
+[+] Timestamps look normal.
+
+[🔐] SHA-256 Hash: d41d8cd98f00b204e9800998ecf8427e
+
+[📌] Extended Attributes (xattr):
+    None
+
+[🔍] Shred Tool Logs Found: No
+
+[🚫] Secure Deletion Evidence:
+    [!] File missing: /root/sensitive_data.txt
+    [!] File missing: /root/bleachbit_temp_sim/tempfile_0.log
+
+[⚠️ ] Log Integrity Status: Mismatch
+
+📁 Report saved to: ./tools/AFID_Report_BEAST.json
+=== ✅ AFID Scan Complete ===
