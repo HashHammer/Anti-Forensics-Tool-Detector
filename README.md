@@ -1,6 +1,6 @@
 # 🧪 AFID – Anti-Forensic Intelligence Detector (v1.0)
 
-> **By Mr HashHammer aka Vasu Garg** | Built & tested on **Kali Linux**
+> **By Mr Vasu Garg aka HashHammer** | Built & tested on **Kali Linux**
 
 ---
 
