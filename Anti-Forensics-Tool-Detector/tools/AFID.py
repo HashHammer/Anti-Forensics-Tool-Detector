@@ -7,7 +7,7 @@ from pathlib import Path
 import json
 
 # === Metadata ===
-VERSION = "1.4-BEAST"
+VERSION = "1.0"
 BASE_DIR = Path(__file__).resolve().parent
 REPORT_PATH = BASE_DIR / "AFID_Report_BEAST.json"
 
